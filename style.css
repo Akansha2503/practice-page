@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Gilroy";
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width:100%;
+    min-height: 100vh;
+}
+#top{
+    width:100%;
+    min-height:60vh;
+    background-image: url(Assets/music.webp);
+    background-size: cover;
+    background-position:60% 40%;
+}
+#bottom{
+    display:flex;
+    width:100%;
+    min-height:40vh;
+}
+#b1{
+    padding:20px;
+    width:20%;
+    min-height:inherit;
+    background-color: white;
+}
+#b1 p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#b2{
+    width:25%;
+    min-height:inherit;
+    background-image: url(Assets/photo-1614149162883-504ce4d13909.avif);
+}
+#b3{
+    width:20%;
+    min-height:inherit;
+    background-color: green;
+}
+#b3top{
+    width:100%;
+    min-height:20vh;
+    padding:20px;
+    background-color: blueviolet;
+    color: bisque;
+}
+#b3top p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#b3bottom {
+    width:100%;
+    min-height:20vh;
+    background-color: rgb(246, 128, 187);
+    color: antiquewhite;
+    background-image: url(Assets/photo-1471478331149-c72f17e33c73.avif);
+    background-position: 30% 20%;
+}
+#b4{
+    width:35%;
+    min-height:inherit;
+    padding:30px;
+    background-color: rgb(212, 174, 218);
+    color: rgb(26, 24, 28);
+}
+#overlay{
+    position:relative;
+    width:100%;
+    min-height:inherit;
+}
+#text{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position:absolute;
+    bottom:10%;
+    margin-left: 10px;
+    width:100%;
+    padding:0 10vw;
+    color:white;
+}   
+#textright{
+    align-items: center;
+    width:60%;
+    display:flex;
+    justify-content: space-between;
+}
+#textright i{
+    color:rgb(239, 242, 245)
+}
+#textright p{
+    font-size:12px;
+    width:40%;
+    justify-content: space-between;
+}
+#text h1{
+    font-size: 8vw;
+    color:whitesmoke;
+}
+.notf{
+    margin-top: 20px;
+    display:flex;
+    justify-content:space-between;
+}
+.notf #photo{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: red;
+}
+.notf p{
+    width:80%;
+    font-size: 12px;
+}
+@media(max-width:500px){
+    #text h1{
+        font-size: 10vw;
+    }
+    #overlay #text{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+        width:initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+    #bottom{
+        flex-direction: column;
+    }
+    #b1{
+        width:100%;
+    }
+    #b2{
+        width:100%;
+    }
+    #b3{
+        flex-direction: column;
+        width:100%;
+    }
+    #b4{
+        width:100%;
+    }
+}
